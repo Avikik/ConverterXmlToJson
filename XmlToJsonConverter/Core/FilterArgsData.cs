@@ -8,20 +8,35 @@ namespace XmlToJsonConverter.Core
         private TestInputArgs testInput;
         private TestFileName testFileName;
         private string inputFileName;
+        private string[] args;
         public FilterArgsData(string[] args)
         {
-            inputFileName = args[0];
-            testInput = new TestInputArgs(args);
-            testFileName = new TestFileName(args[0], args[1]);
+            this.args = args;            
+            testInput = new TestInputArgs(args);            
         }
 
         public bool isFilterArgs()
         {
             return isFilterNameArgs() && SearchFiles(inputFileName);
         }
+      
         private bool isFilterNameArgs()
         {         
-            return testInput.isCountArgsOk() && testFileName.TestFileNameType();
+            return isInputDataOK() && testFileName.TestFileNameType();
+        }
+
+        private bool isInputDataOK()
+        {
+            if (testInput.isCountArgsOk())
+                return IntializationFileNameArgs();
+            return false;             
+        }
+
+        private bool IntializationFileNameArgs()
+        {
+            testFileName = new TestFileName(args[0], args[1]);
+            inputFileName = args[0];
+            return true;
         }
 
         private bool SearchFiles(string inputFileName)
