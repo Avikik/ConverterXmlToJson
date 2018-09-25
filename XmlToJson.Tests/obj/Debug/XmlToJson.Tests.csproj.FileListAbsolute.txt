@@ -1,0 +1,9 @@
+D:\proj\XmlToJsonConverter\XmlToJson.Tests\bin\Debug\XmlToJson.Tests.dll
+D:\proj\XmlToJsonConverter\XmlToJson.Tests\bin\Debug\XmlToJson.Tests.pdb
+D:\proj\XmlToJsonConverter\XmlToJson.Tests\obj\Debug\XmlToJson.Tests.csprojResolveAssemblyReference.cache
+D:\proj\XmlToJsonConverter\XmlToJson.Tests\obj\Debug\XmlToJson.Tests.dll
+D:\proj\XmlToJsonConverter\XmlToJson.Tests\obj\Debug\XmlToJson.Tests.pdb
+D:\proj\XmlToJsonConverter\XmlToJson.Tests\bin\Debug\XmlToJsonConverter.exe
+D:\proj\XmlToJsonConverter\XmlToJson.Tests\bin\Debug\Newtonsoft.Json.dll
+D:\proj\XmlToJsonConverter\XmlToJson.Tests\bin\Debug\XmlToJsonConverter.pdb
+D:\proj\XmlToJsonConverter\XmlToJson.Tests\bin\Debug\Newtonsoft.Json.xml
