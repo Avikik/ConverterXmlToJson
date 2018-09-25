@@ -13,7 +13,7 @@ namespace XmlToJsonConverter.Core
         {
             List<Layer> layerList =
                 (
-                    from LayerLevelOne in XDocument.Load(@"D:/22.xml").Root.Elements("Layer")
+                    from LayerLevelOne in XDocument.Load(inputFileName).Root.Elements("Layer")
                     select new Layer
                     {
                         Name = (string)LayerLevelOne.Element("Name"),
